@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — The Dashboard</title>
+<meta name="robots" content="noindex">
+<style>
+  :root {
+    --ink: #1c1f23;
+    --muted: #5b6168;
+    --rule: #d8dbdf;
+    --paper: #fcfcfb;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 3rem 1.5rem 5rem;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 17px;
+    line-height: 1.65;
+  }
+  main { max-width: 42rem; margin: 0 auto; }
+  h1 {
+    font-size: 1.6rem;
+    line-height: 1.25;
+    font-weight: normal;
+    margin: 0 0 .4rem;
+  }
+  .meta {
+    color: var(--muted);
+    font-size: .85rem;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    margin: 0 0 2.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--rule);
+  }
+  h2 {
+    font-size: 1rem;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    letter-spacing: .01em;
+    margin: 2.4rem 0 .6rem;
+  }
+  p, li { margin: 0 0 .9rem; }
+  ul { padding-left: 1.2rem; }
+  li { margin-bottom: .5rem; }
+  footer {
+    margin-top: 3.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--rule);
+    color: var(--muted);
+    font-size: .85rem;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  }
+  a { color: inherit; }
+</style>
+</head>
+<body>
+<main>
+
+  <h1>Privacy Policy</h1>
+  <p class="meta">The Dashboard &middot; Effective 19 September 2026</p>
+
+  <p>This policy describes how Decision Point Advisors Inc. (“the Company”) handles information in connection with The Dashboard (the “Application”), an internal tool that connects to the Company’s own QuickBooks Online company file.</p>
+
+  <h2>Scope</h2>
+  <p>The Application is used only by the Company’s authorised personnel. It is not available to the public, to clients, or to any other organisation. It connects to a single QuickBooks Online company file — the Company’s own — and does not access QuickBooks data belonging to any client or third party.</p>
+
+  <h2>What the Application accesses</h2>
+  <p>Through Intuit’s QuickBooks Online API, the Application retrieves the Company’s own accounting records, which may include:</p>
+  <ul>
+    <li>chart of accounts, journal entries, and general ledger transactions;</li>
+    <li>invoices, bills, payments and related documents;</li>
+    <li>customer and vendor records, which may contain business contact details and, in some cases, the names and contact details of individuals;</li>
+    <li>company profile and configuration settings.</li>
+  </ul>
+  <p>The Application requests the accounting scope (<code>com.intuit.quickbooks.accounting</code>) only. It does not request payroll or payments scopes.</p>
+
+  <h2>Authentication data</h2>
+  <p>The Application uses OAuth 2.0 access and refresh tokens issued by Intuit to maintain the connection. Tokens are held as secrets within the Company’s Microsoft Entra ID tenant, encrypted at rest by the platform, and are not exposed to users or transmitted to any third party. The Application does not collect or store QuickBooks passwords.</p>
+
+  <h2>Where information is held</h2>
+  <p>The Application runs on Microsoft Azure in the West US region, meaning information is processed on servers located in the United States. Data retrieved through the QuickBooks Online API is held in memory only, for the duration of the session in which it is requested. The Application does not write QuickBooks data to any database, file store, log or backup.</p>
+
+  <h2>Purpose</h2>
+  <p>Information is used solely for the Company’s internal accounting, reporting and analysis. It is not used for marketing, not used to train any machine learning model, and not used for any purpose unrelated to the Company’s own operations.</p>
+
+  <h2>Disclosure</h2>
+  <p>The Company does not sell, rent, trade or otherwise disclose information obtained through the Application to any third party. The only external parties involved are Intuit Inc., as the source of the data and provider of the API, and Microsoft Corporation, as the hosting provider for the Azure infrastructure on which the Application runs.</p>
+
+  <h2>Access controls</h2>
+  <p>Access to the Application requires authentication through the Company’s Microsoft Entra ID tenant and is limited to personnel with a business need. Data is encrypted in transit using TLS. Because no QuickBooks data is persisted, there is no stored copy of that data to encrypt at rest; stored credentials are encrypted at rest by the platform.</p>
+
+  <h2>Retention</h2>
+  <p>The Application does not retain QuickBooks data. Information exists only in memory while a session is active and is discarded when the session ends. The authoritative record remains in QuickBooks Online and is subject to the Company’s general records retention obligations.</p>
+
+  <h2>Disconnection</h2>
+  <p>The Company may revoke the Application’s access at any time from within QuickBooks Online, or from within the Application itself. On disconnection, stored tokens are deleted and no further data is retrieved. As no QuickBooks data is retained, no deletion of stored records is required.</p>
+
+  <h2>Personal information</h2>
+  <p>Where the Application handles personal information, the Company does so in accordance with the <em>Personal Information Protection Act</em> (British Columbia) and its own internal privacy and confidentiality obligations. Individuals may request access to, or correction of, personal information held about them by contacting the address below.</p>
+
+  <h2>Changes</h2>
+  <p>This policy may be updated from time to time. The version published at this address is the version in force.</p>
+
+  <h2>Contact</h2>
+  <p>Privacy enquiries: <a href="mailto:info@dpadvisors.ca">info@dpadvisors.ca</a></p>
+
+  <footer>
+    Decision Point Advisors Inc., Vancouver, British Columbia, Canada &middot; <a href="eula.html">End User License Agreement</a>
+  </footer>
+
+</main>
+</body>
+</html>

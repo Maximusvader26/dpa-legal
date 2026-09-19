@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Disconnected — The Dashboard</title>
+<meta name="robots" content="noindex">
+<style>
+  :root {
+    --ink: #1c1f23;
+    --muted: #5b6168;
+    --rule: #d8dbdf;
+    --paper: #fcfcfb;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 3rem 1.5rem 5rem;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 17px;
+    line-height: 1.65;
+  }
+  main { max-width: 34rem; margin: 0 auto; }
+  h1 {
+    font-size: 1.6rem;
+    line-height: 1.25;
+    font-weight: normal;
+    margin: 0 0 1.2rem;
+  }
+  p { margin: 0 0 1rem; }
+  .steps {
+    margin: 1.8rem 0 0;
+    padding: 1.4rem 1.5rem;
+    border: 1px solid var(--rule);
+    background: #fff;
+  }
+  .steps h2 {
+    font-size: .95rem;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    margin: 0 0 .7rem;
+  }
+  .steps ol { margin: 0; padding-left: 1.2rem; }
+  .steps li { margin-bottom: .5rem; }
+  .steps li:last-child { margin-bottom: 0; }
+  footer {
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--rule);
+    color: var(--muted);
+    font-size: .85rem;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  }
+  a { color: inherit; }
+</style>
+</head>
+<body>
+<main>
+
+  <h1>You've disconnected from QuickBooks</h1>
+
+  <p>The Dashboard no longer has access to the QuickBooks Online company file. Stored authorisation tokens have been discarded, and any scheduled data retrieval has stopped.</p>
+
+  <p>If this was intentional, nothing further is needed.</p>
+
+  <div class="steps">
+    <h2>To reconnect</h2>
+    <ol>
+      <li>Sign in to The Dashboard at <a href="https://gentle-desert-064af991e.7.azurestaticapps.net">gentle-desert-064af991e.7.azurestaticapps.net</a>.</li>
+      <li>Open Settings and select Connect to QuickBooks.</li>
+      <li>Authorise the connection when QuickBooks prompts you.</li>
+    </ol>
+  </div>
+
+  <p style="margin-top:1.8rem">Problems reconnecting: <a href="mailto:info@dpadvisors.ca">info@dpadvisors.ca</a></p>
+
+  <footer>
+    Decision Point Advisors Inc. &middot;
+    <a href="eula.html">End User License Agreement</a> &middot;
+    <a href="privacy.html">Privacy Policy</a>
+  </footer>
+
+</main>
+</body>
+</html>
